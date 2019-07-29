@@ -26,6 +26,13 @@ layoutDir:              "site/layouts"
 staticDir:              "site/static"
 themesDir:              "site/themes"
 
+module:
+  hugoVersion:
+    min: 0.56.0
+  mounts:
+    - source:           "dist"
+      target:           "static/docs/4.3/dist"
+
 params:
   description:          "The most popular HTML, CSS, and JS library in the world."
   authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
